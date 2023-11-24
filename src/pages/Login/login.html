@@ -1,0 +1,8 @@
+<link rel="stylesheet" href="/src/pages/Login/login.scss" />
+<link rel="stylesheet" href="/style.scss" />
+<div class="loginContainer">
+  {{#> Layout/layout title="Login"}} {{#> Form/form title="Войти"}} {{>
+  Input/input type="text" label="Логин" placeholder="Введите имя пользователя"}}
+  {{> Input/input type="password" label="Пароль" placeholder="Введите пароль"}}
+  {{> Button/button text="Login"}} {{/ Form/form}} {{/ Layout/layout}}
+</div>
