@@ -1,12 +1,12 @@
 <link rel="stylesheet" href="/src/pages/Login/login.scss" />
 <link rel="stylesheet" href="/style.scss" />
 <div class="formContainer">
-  {{#> Layout/layout title="Войти"}} 
-    {{#> Form/form title="Войти"}} 
+  {{#> Layout/layout title="Регистрация"}} 
+    {{#> Form/form title="Регистрация"}} 
       {{> Input/input type="text" label="Логин" placeholder="Введите имя пользователя"}}
       {{> Input/input type="password" label="Пароль" placeholder="Введите пароль"}}
-      {{> Button/button type="submit" text="Авторизоваться" style="login"}}
-      <a href="" class="form__link">Нет аккаунта?</a>
+      {{> Button/button type="submit" text="Зарегистрироваться" style="register"}}
+      <a href="" class="form__link">Войти</a>
     {{/ Form/form}} 
   {{/ Layout/layout}}
 </div>
