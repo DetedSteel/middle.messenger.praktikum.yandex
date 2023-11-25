@@ -11,9 +11,10 @@
     padding: 4px 0;
     width: 280px;
 
-    &_inline{
-      border-bottom-color: #EAEAEA;
+    &_inline {
+      border-bottom-color: #eaeaea;
       width: 510px;
+      text-align: right;
 
       &::placeholder {
         text-align: right;
@@ -26,17 +27,15 @@
     font-size: 10px;
     font-weight: 500;
 
-    &_inline{
+    &_inline {
       color: black;
       font-size: 13px;
       position: absolute;
     }
   }
 
-  &_inline{
+  &_inline {
     flex-direction: row;
     position: relative;
-    margin-top: 500px;
-    margin-left: 500px;
   }
 }

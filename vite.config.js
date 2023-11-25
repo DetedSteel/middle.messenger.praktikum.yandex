@@ -7,10 +7,13 @@ export default defineConfig({
     outDir: resolve(__dirname, "dist"),
     rollupOptions: {
       input: {
-          index: resolve(__dirname, 'index.html'),
-          login: resolve(__dirname, 'src/pages/Login/login.html'),
-      }
-  }
+        index: resolve(__dirname, "index.html"),
+        login: resolve(__dirname, "src/pages/Login/login.html"),
+        register: resolve(__dirname, "src/pages/Register/register.html"),
+        profileSettings: resolve(__dirname, "src/pages/Profile/profileSettings.html"),
+        changePassword: resolve(__dirname, "src/pages/ChangePassword/changePassword.html")
+      },
+    },
   },
   server: {
     port: 3000,
@@ -19,7 +22,15 @@ export default defineConfig({
     handlebars({
       partialDirectory: resolve(__dirname, "src/partials"),
       context: {
-        username: "petya",
+        userInfo: {
+          firstName: "Петя",
+          secondName: "Мершин",
+          email: "pkmershin@gmail.com",
+          login: "DS",
+          phone: "+7 (968) 780 85 75",
+          displayName: "Пётр Мершин"
+        },
+        profilePhoto: "/noPhoto.png",
       },
     }),
   ],

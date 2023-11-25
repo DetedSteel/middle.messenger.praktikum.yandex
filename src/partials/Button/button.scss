@@ -5,12 +5,16 @@
   border: none;
   color: white;
   cursor: pointer;
-}
 
-.button_login {
-  margin-top: 80px;
-}
+  &_login {
+    margin-top: 80px;
+  }
 
-.button_register {
-  margin-top: 20px;
+  &_register {
+    margin-top: 20px;
+  }
+
+  &_changePassword {
+    margin-top: 100px;
+  }
 }
