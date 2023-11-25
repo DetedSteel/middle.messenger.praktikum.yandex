@@ -1,12 +1,17 @@
-<link rel="stylesheet" href="/src/pages/Login/login.scss" />
+<link rel="stylesheet" href="/src/pages/Register/register.scss" />
 <link rel="stylesheet" href="/style.scss" />
-<div class="formContainer">
+<div class="formContainer formContainer_register">
   {{#> Layout/layout title="Регистрация"}} 
     {{#> Form/form title="Регистрация"}} 
-      {{> Input/input type="text" label="Логин" placeholder="Введите имя пользователя"}}
+      {{> Input/input type="email" name="email" label="Почта" placeholder="Введите эл. почту"}}
+      {{> Input/input type="text" name="login" label="Логин" placeholder="Введите логин"}}
+      {{> Input/input type="text" name="first_name" label="Имя" placeholder="Введите имя"}}
+      {{> Input/input type="text" name="second_name" label="Фамилия" placeholder="Введите фамилию"}}
+      {{> Input/input type="phone" name="phone" label="Телефон" placeholder="Введите номер телефона"}}
       {{> Input/input type="password" label="Пароль" placeholder="Введите пароль"}}
+      {{> Input/input type="password" label="Пароль(ещё раз)" placeholder="Повторите пароль"}}
       {{> Button/button type="submit" text="Зарегистрироваться" style="register"}}
-      <a href="" class="form__link">Войти</a>
+      <a href="../Login/login.html" class="form__link">Войти</a>
     {{/ Form/form}} 
   {{/ Layout/layout}}
 </div>
