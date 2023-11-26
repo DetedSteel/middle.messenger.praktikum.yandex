@@ -12,7 +12,10 @@ export default defineConfig({
         login: resolve(__dirname, "src/pages/Login/login.html"),
         register: resolve(__dirname, "src/pages/Register/register.html"),
         profileSettings: resolve(__dirname, "src/pages/Profile/profileSettings.html"),
-        changePassword: resolve(__dirname, "src/pages/ChangePassword/changePassword.html")
+        changePassword: resolve(__dirname, "src/pages/ChangePassword/changePassword.html"),
+        chat: resolve(__dirname, "src/pages/Chat/chat.html"),
+        404: resolve(__dirname, "src/pages/404/404.html"),
+        500: resolve(__dirname, "src/pages/5xx/5xx.html"),
       },
     },
   },

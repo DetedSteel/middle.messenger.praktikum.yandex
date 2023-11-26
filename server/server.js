@@ -5,7 +5,7 @@ const PORT = 3000;
 
 const app = express();
 
-const ROOT = resolve("../dist");
+const ROOT = resolve("dist");
 
 app.use(express.static(ROOT));
 

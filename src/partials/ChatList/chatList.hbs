@@ -8,6 +8,6 @@
   </a>
   {{> Input/input type="text" name="searchChat" placeholder="Поиск" style="searchChat"}}
   {{#each chats}}
-    {{> ChatItem/chatItem chatPhoto=profilePhoto chatName=this.chatName lastMessage=this.lastMessage lastMessageAuthor=this.lastMessageAuthor lastMessageTime=this.lastMessageTime unreadCount=this.unreadCount}}
+    {{> ChatItem/chatItem chatItemPhoto=this.profilePhoto chatName=this.chatName lastMessage=this.lastMessage lastMessageAuthor=this.lastMessageAuthor lastMessageTime=this.lastMessageTime unreadCount=this.unreadCount}}
   {{/each}}
 </div>
