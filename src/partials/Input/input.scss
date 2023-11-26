@@ -9,15 +9,34 @@
     background-color: transparent;
     outline: none;
     padding: 4px 0;
-    width: 280px;
+    width: 290px;
 
     &_inline {
       border-bottom-color: #eaeaea;
       width: 510px;
       text-align: right;
+    }
+
+    &_message {
+      border-radius: 30px;
+      height: 32px;
+      background-color: #EFEFEF;
+      border: none;
+      padding-left: 20px;
+      width: 100%;
+    }
+
+    &_searchChat {
+      text-align: center;
+      border: none;
+      background-color: #EFEFEF;
+      border-radius: 5px;
 
       &::placeholder {
-        text-align: right;
+        background-image: url("/icons/search.svg");
+        background-repeat: no-repeat;
+        background-position-x: 105px;
+        background-position-y: -2px;
       }
     }
   }
@@ -37,5 +56,17 @@
   &_inline {
     flex-direction: row;
     position: relative;
+  }
+
+  &_searchChat {
+    max-width: 290px;
+    align-self: center;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #EAEAEA;
+  }
+
+  &_message {
+    max-width: 760px;
+    width: 100%;
   }
 }

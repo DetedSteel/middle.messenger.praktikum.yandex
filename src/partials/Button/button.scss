@@ -17,4 +17,22 @@
   &_changePassword {
     margin-top: 100px;
   }
+
+  &_messageButtons {
+    background-color: transparent;
+    padding: 0;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  &_menuDots {
+    background-color: transparent;
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+  }
 }

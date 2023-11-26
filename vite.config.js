@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 import { resolve } from "path";
 import handlebars from "vite-plugin-handlebars";
+import { data } from "./data";
 
 export default defineConfig({
   build: {
@@ -21,17 +22,7 @@ export default defineConfig({
   plugins: [
     handlebars({
       partialDirectory: resolve(__dirname, "src/partials"),
-      context: {
-        userInfo: {
-          firstName: "Петя",
-          secondName: "Мершин",
-          email: "pkmershin@gmail.com",
-          login: "DS",
-          phone: "+7 (968) 780 85 75",
-          displayName: "Пётр Мершин"
-        },
-        profilePhoto: "/noPhoto.png",
-      },
+      context: data,
     }),
   ],
 });

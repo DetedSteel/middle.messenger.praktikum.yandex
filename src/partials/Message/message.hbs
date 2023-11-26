@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="/src/partials/Message/message.scss">
+<div class="messageItem messageItem_{{style}} {{#if image.src}}messageItem_image{{/if}}">
+  {{#if text}}
+    <p class="messageItem__text">{{text}}</p>
+  {{/if}}
+  {{#if image.src}}
+    <img class="messageItem__image" src="{{image.src}}" alt="{{image.alt}}">
+  {{/if}}
+  {{#if statusImage}}
+    <img class="messageItem__StatusImage" src="{{statusImage.src}}" alt="{{statusImage.alt}}">
+  {{/if}}
+  <p class="messageItem__time {{#if image.src}}messageItem__time_image{{/if}} messageItem__time_{{style}}">{{time}}</p>
+</div>
