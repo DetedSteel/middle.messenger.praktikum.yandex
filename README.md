@@ -6,4 +6,6 @@
   npm run start - Сборка проекта и запуск express сервера
 
 Ссылка на Netlify: https://deploy--mellifluous-kangaroo-109596.netlify.app/
+
 Ссылки на свёрстанные страницы находятся на этой странице
+
