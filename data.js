@@ -5,7 +5,7 @@ export const data = {
     email: "pkmershin@gmail.com",
     login: "DS",
     phone: "+7 (968) 780 85 75",
-    displayName: "Пётр Мершин"
+    displayName: "Пётр Мершин",
   },
   profilePhoto: "/noPhoto.png",
   chats: [
@@ -15,7 +15,7 @@ export const data = {
       lastMessageAuthor: "",
       unreadCount: 2,
       lastMessageTime: "10:49",
-      profilePhoto: "/noPhoto.png"
+      profilePhoto: "/noPhoto.png",
     },
     {
       chatName: "Илья",
@@ -23,7 +23,7 @@ export const data = {
       lastMessageAuthor: "Вы: ",
       unreadCount: 0,
       lastMessageTime: "15:12",
-      profilePhoto: "/noPhoto.png"
+      profilePhoto: "/noPhoto.png",
     },
     {
       chatName: "Вадим",
@@ -31,8 +31,8 @@ export const data = {
       lastMessageAuthor: "Вы: ",
       unreadCount: 0,
       lastMessageTime: "ПТ",
-      profilePhoto: "/noPhoto.png"
-    }
+      profilePhoto: "/noPhoto.png",
+    },
   ],
   vadimChat: {
     name: "Вадим",
@@ -42,21 +42,21 @@ export const data = {
         text: "Привет! Смотри, тут всплыл интересный кусок лунной космической истории — НАСА в какой-то момент попросила Хассельблад адаптировать модель SWC для полетов на Луну. Сейчас мы все знаем что астронавты летали с моделью 500 EL — и к слову говоря, все тушки этих камер все еще находятся на поверхности Луны, так как астронавты с собой забрали только кассеты с пленкой. Хассельблад в итоге адаптировал SWC для космоса, но что-то пошло не так и на ракету они так никогда и не попали. Всего их было произведено 25 штук, одну из них недавно продали на аукционе за 45000 евро.",
         image: {
           src: "",
-          alt: "chatImage"
+          alt: "chatImage",
         },
         status: "read",
-        time: "11:56"
+        time: "11:56",
       },
       {
         author: "",
         text: "",
         image: {
           src: "/camera.png",
-          alt: "chatImage"
+          alt: "chatImage",
         },
         status: "read",
         statusImage: {},
-        time: "11:56"
+        time: "11:56",
       },
       {
         author: "Вы",
@@ -65,26 +65,26 @@ export const data = {
         status: "read",
         statusImage: {
           src: "/icons/readStatus.svg",
-          alt: "status"
+          alt: "status",
         },
-        time: "12:00"
-      }
-    ]
+        time: "12:00",
+      },
+    ],
   },
   addFileImage: {
     src: "/icons/addFile.svg",
-    alt: "addFile"
+    alt: "addFile",
   },
   sendMessageImage: {
     src: "/icons/sendMessage.svg",
-    alt: "sendMessage"
+    alt: "sendMessage",
   },
   menuDotsImage: {
     src: "/icons/menuDots.svg",
-    alt: "moreInfo"
+    alt: "moreInfo",
   },
   readMessageImage: {
     src: "/icons/readStatus.svg",
-    alt: "status"
-  }
-}
+    alt: "status",
+  },
+};

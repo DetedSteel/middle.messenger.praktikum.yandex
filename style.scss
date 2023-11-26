@@ -7,8 +7,16 @@
   font-family: 'Inter', sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
+li {
+  text-align: left;
+}
+
 .formContainer {
-  min-height: 100%;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
