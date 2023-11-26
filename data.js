@@ -85,6 +85,6 @@ export const data = {
   },
   readMessageImage: {
     src: "/icons/readStatus.svg",
-    alt: "status",
-  },
-};
+    alt: "status"
+  }
+}
