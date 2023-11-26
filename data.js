@@ -14,21 +14,24 @@ export const data = {
       lastMessage: "Привет",
       lastMessageAuthor: "",
       unreadCount: 2,
-      lastMessageTime: "10:49"
+      lastMessageTime: "10:49",
+      profilePhoto: "/noPhoto.png"
     },
     {
       chatName: "Илья",
       lastMessage: "Пока",
       lastMessageAuthor: "Вы: ",
       unreadCount: 0,
-      lastMessageTime: "15:12"
+      lastMessageTime: "15:12",
+      profilePhoto: "/noPhoto.png"
     },
     {
       chatName: "Вадим",
       lastMessage: "Круто",
       lastMessageAuthor: "Вы: ",
       unreadCount: 0,
-      lastMessageTime: "ПТ"
+      lastMessageTime: "ПТ",
+      profilePhoto: "/noPhoto.png"
     }
   ],
   vadimChat: {
