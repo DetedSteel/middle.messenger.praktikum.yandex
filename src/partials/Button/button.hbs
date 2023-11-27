@@ -1,0 +1,7 @@
+<link rel="stylesheet" href="/src/partials/Button/button.scss" />
+<button type="{{type}}" class="button button_{{style}}">
+  {{text}}
+  {{#if image}}
+    <img src="{{image.src}}" alt="{{image.alt}}" class="button__image_{{style}}">
+  {{/if}}
+</button>
