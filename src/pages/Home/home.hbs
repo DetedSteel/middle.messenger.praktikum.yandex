@@ -1,0 +1,11 @@
+<div>
+  <nav>
+    <ul class='links'>
+      {{#each buttons}}
+        <li>
+          {{{Button style='home-link' text=this.text onClick=this.onClick}}}
+        </li>
+      {{/each}}
+    </ul>
+  </nav>
+</div>

@@ -1,0 +1,12 @@
+<div class="message-item message-item_{{style}} {{#if image.src}}message-item_image{{/if}}">
+  {{#if text}}
+    <p class="message-item__text">{{text}}</p>
+  {{/if}}
+  {{#if image.src}}
+    <img class="message-item__image" src="{{image.src}}" alt="{{image.alt}}">
+  {{/if}}
+  {{#if statusImage}}
+    <img class="message-item__StatusImage" src="{{statusImage.src}}" alt="{{statusImage.alt}}">
+  {{/if}}
+  <p class="message-item__time {{#if image.src}}message-item__time_image{{/if}} message-item__time_{{style}}">{{time}}</p>
+</div>

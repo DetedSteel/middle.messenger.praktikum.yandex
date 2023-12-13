@@ -1,0 +1,17 @@
+.chat-list {
+  max-width: 310px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fbfbfb;
+  border-right: 1px solid #eaeaea;
+  min-height: 100vh;
+
+  &__profileLink {
+    color: #999;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    align-self: flex-end;
+    margin: 22px 10px;
+  }
+}
