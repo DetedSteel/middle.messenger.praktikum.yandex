@@ -16,13 +16,7 @@ export interface InputProps {
 export class Input extends Block {
   constructor(props: InputProps) {
     super({
-      style: props.style,
-      label: props.label,
-      type: props.type,
-      name: props.name,
-      placeholder: props.placeholder,
-      errorLabel: '',
-      value: props.value,
+      ...props,
       events: {
         focusout: (e: Event) => {
           const target = e.target as HTMLInputElement;

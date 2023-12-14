@@ -44,6 +44,11 @@
   &__error {
     font-size: 10px;
     color: #ff0000;
+
+    &_inline {
+      position: absolute;
+      top: 30px;
+    }
   }
 
   &__label {

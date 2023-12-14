@@ -17,6 +17,8 @@ export class Login extends Block {
         { type: 'password', name: 'password', label: 'Пароль', placeholder: 'Введите пароль' },
       ],
       title: 'Логин',
+      btnText: 'Авторизоваться',
+      linkText: 'Нет аккаунта?',
       onSubmit: submit,
       buttonEvent: () => {
         render('register');

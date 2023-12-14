@@ -21,6 +21,8 @@ export class Register extends Block {
         },
       ],
       title: 'Регистрация',
+      btnText: 'Зарегистрироваться',
+      linkText: 'Уже зарегистрированы?',
       onSubmit: submit,
       buttonEvent: () => {
         render('login');

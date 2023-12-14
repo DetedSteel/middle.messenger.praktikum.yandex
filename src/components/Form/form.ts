@@ -5,6 +5,8 @@ import template from './form.hbs';
 export interface FormProps {
   inputs: InputProps[];
   title: string;
+  btnText: string;
+  linkText: string;
   events: {
     submit: (e: SubmitEvent) => void;
   };
@@ -17,6 +19,8 @@ export class Form extends Block {
     super({
       inputs: props.inputs,
       title: props.title,
+      btnText: props.btnText,
+      linkText: props.linkText,
       events: {
         submit: props.onSubmit,
       },

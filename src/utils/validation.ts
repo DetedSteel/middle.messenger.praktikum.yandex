@@ -1,4 +1,20 @@
 export function validate(target: HTMLInputElement): string {
+
+  const passCheck = () => {
+    if (
+      !(
+        target.value.match(/^.{8,40}$/) &&
+        target.value.match(/[A-Z]+/) &&
+        target.value.match(/\d+/)
+      )
+    ) {
+      return `Пароль должен быть от 8 до 40 
+        символов и содержать хотя бы 1 заглавную букву и цифру`;
+    } else {
+      return '';
+    }
+  }
+
   switch (target.name) {
     case 'login':
       if (!(target.value.match(/^[a-zA-Z-_\d]{3,20}$/) && target.value.match(/[a-zA-Z]+/))) {
@@ -8,18 +24,13 @@ export function validate(target: HTMLInputElement): string {
         return '';
       }
     case 'password':
-      if (
-        !(
-          target.value.match(/^.{8,40}$/) &&
-          target.value.match(/[A-Z]+/) &&
-          target.value.match(/\d+/)
-        )
-      ) {
-        return `Пароль должен быть от 8 до 40 
-        символов и содержать хотя бы 1 заглавную букву и цифру`;
-      } else {
-        return '';
-      }
+      passCheck
+    case 'old_password':
+      passCheck
+    case 'new_password':
+      passCheck
+    case 'confirm_password':
+      passCheck
     case 'first_name':
       if (!target.value.match(/^[A-ZА-Я]{1}[A-Za-zа-яА-Я-]+$/)) {
         return 'Некорректное имя';
