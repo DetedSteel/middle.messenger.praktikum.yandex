@@ -20,7 +20,7 @@ class Block {
   public children: Record<string, Block>;
   private eventBus: () => EventBus;
   private _element: HTMLElement | null = null;
-  private _meta: { props: Props };
+  // private _meta: { props: Props };
 
   /** JSDoc
    * @param {string} tagName
@@ -33,9 +33,9 @@ class Block {
 
     const {props, children} = this._getChildrenAndProps(propsWithChildren);
 
-    this._meta = {
-      props
-    };
+    // this._meta = {
+    //   props
+    // };
 
     this.children = children;
     this.props = this._makePropsProxy(props);
