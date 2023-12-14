@@ -1,10 +1,8 @@
 @import 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap';
 
-
 @import 'blocks/Button/button.scss';
 @import 'blocks/Image/image.scss';
 @import 'blocks/Input/input.scss';
-
 
 @import 'components/ErrorPage/errorPage.scss';
 @import 'components/ChatItem/chatItem.scss';
@@ -12,7 +10,6 @@
 @import 'components/Message/message.scss';
 @import 'components/ChatWith/chatWith.scss';
 @import 'components/Form/form.scss';
-
 
 @import 'pages/Chat/chat.scss';
 @import 'pages/Profile/profile.scss';
