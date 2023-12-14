@@ -9,6 +9,7 @@ export class HomePage extends Block {
         { text: 'Страница регистрации', onClick: () => {render('register')} },
         { text: 'Страница входа', onClick: () => {render('login')} },
         { text: 'Страница профиля', onClick: () => {render('profileSettings')} },
+        { text: 'Страница изменения пароля', onClick: () => {render('changePassword')} },
         { text: 'Чат', onClick: () => {render('chat')} },
         { text: '404', onClick: () => {render('notFound')} },
         { text: '5xx', onClick: () => {render('serverErrorPage')}},

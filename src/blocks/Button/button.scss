@@ -51,5 +51,27 @@
     text-decoration: underline;
     font-size: 18px;
     padding: 0;
+
+    &-fixed {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      color: #3369f3;
+      background-color: transparent;
+      text-decoration: underline;
+      font-size: 18px;
+      padding: 0;
+    }
+  }
+
+  &_profileLink {
+    color: #999;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    align-self: flex-end;
+    margin: 22px 10px;
+    background-color: transparent;
+    padding: 0;
   }
 }

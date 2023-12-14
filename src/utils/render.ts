@@ -1,5 +1,6 @@
 import { NotFoundPage } from '../pages/404/404';
 import { ServerErrorPage } from '../pages/5xx/5xx';
+import { changePassword } from '../pages/ChangePassword/changePassword';
 import { Chat } from '../pages/Chat/chat';
 import { HomePage } from '../pages/Home/home';
 import { Login } from '../pages/Login/login';
@@ -14,6 +15,7 @@ const ROUTES = {
   login: Login,
   register: Register,
   profileSettings: Profile,
+  changePassword: changePassword,
 };
 
 export function render(name: keyof typeof ROUTES) {

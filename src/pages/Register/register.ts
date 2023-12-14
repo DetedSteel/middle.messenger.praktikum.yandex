@@ -25,6 +25,9 @@ export class Register extends Block {
       buttonEvent: () => {
         render('login');
       },
+      onClick: () => {
+        render('home');
+      },
     });
   }
 

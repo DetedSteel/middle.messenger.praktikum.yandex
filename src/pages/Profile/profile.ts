@@ -2,10 +2,13 @@ import Block from '../../utils/Block';
 import template from './profile.hbs';
 import data from '../../data';
 import { submit } from '../../utils/submit';
+import { render } from '../../utils/render';
 
 export class Profile extends Block {
   constructor() {
     super({
+      name: data.userInfo.displayName,
+      profilePhoto: data.profilePhoto,
       inputs: [
         {
           type: 'email',
@@ -53,6 +56,7 @@ export class Profile extends Block {
       events: {
         submit: submit
       },
+      onClick: () => {render('home')}
     });
   }
 

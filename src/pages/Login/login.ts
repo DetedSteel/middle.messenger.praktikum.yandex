@@ -7,12 +7,24 @@ export class Login extends Block {
   constructor() {
     super({
       inputs: [
-        { type: 'text', name: 'login', label: 'Логин', placeholder: 'Введите логин' },
+        {
+          type: 'text',
+          name: 'login',
+          label: 'Логин',
+          placeholder: 'Введите логин',
+          errorLabel: '',
+        },
         { type: 'password', name: 'password', label: 'Пароль', placeholder: 'Введите пароль' },
       ],
       title: 'Логин',
       onSubmit: submit,
-      buttonEvent: () => {render('register')}
+      buttonEvent: () => {
+        render('register');
+      },
+      onClick: () => {
+        console.log(this);
+        render('home');
+      },
     });
   }
 

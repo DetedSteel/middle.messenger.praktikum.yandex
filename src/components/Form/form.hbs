@@ -2,7 +2,14 @@
   <form action='' class='form'>
     <h1 class='form__title'>{{title}}</h1>
     {{#each inputs}}
-      {{{Input type=this.type name=this.name label=this.labes placeholder=this.placeholder}}}
+      {{{Input
+        type=this.type
+        name=this.name
+        label=this.labes
+        placeholder=this.placeholder
+        errorLabel=this.errorLabel
+        onBlur=this.onBlur
+      }}}
     {{/each}}
     {{{Button type='submit' text='Авторизоваться' style='login'}}}
     {{{Button style='link' type='button' text='Нет аккаунта?' onClick=buttonEvent}}}
