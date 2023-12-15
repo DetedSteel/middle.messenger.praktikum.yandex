@@ -13,20 +13,22 @@ function queryStringify(data: Record<string, any>): string {
   );
 }
 
+type HTTPMethod = (url: string, options?: { timeout?: number }) => Promise<unknown>
+
 export class HTTPTransport {
-  get = (url: string, options: { timeout?: number } = {}) => {
+  get: HTTPMethod = (url, options = {}) => {
     return this.request(url, { ...options, method: METHOD.GET }, options.timeout);
   };
 
-  put = (url: string, options: { timeout?: number } = {}) => {
+  put: HTTPMethod = (url, options = {}) => {
     return this.request(url, { ...options, method: METHOD.PUT }, options.timeout);
   };
 
-  post = (url: string, options: { timeout?: number } = {}) => {
+  post: HTTPMethod = (url, options = {}) => {
     return this.request(url, { ...options, method: METHOD.POST }, options.timeout);
   };
 
-  delete = (url: string, options: { timeout?: number } = {}) => {
+  delete: HTTPMethod = (url, options = {}) => {
     return this.request(url, { ...options, method: METHOD.DELETE }, options.timeout);
   };
 
