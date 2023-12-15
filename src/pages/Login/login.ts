@@ -24,7 +24,6 @@ export class Login extends Block {
         render('register');
       },
       onClick: () => {
-        console.log(this);
         render('home');
       },
     });
