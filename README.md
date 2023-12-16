@@ -8,4 +8,4 @@
 Ссылка на Netlify: https://deploy--mellifluous-kangaroo-109596.netlify.app/
 
 Ссылки на свёрстанные страницы находятся на этой странице
-
+Добавлены typeScript, ESLint, StyleLint, Компонентный подход и изменена файловая структура.

@@ -1,0 +1,6 @@
+<div class="profile">
+  <h1>{{name}}</h1>
+  {{#each inputs}}
+    {{{Input type=this.type name=this.name placeholder=this.placeholder label=this.label style=this.style}}}
+  {{/each}}
+</div>

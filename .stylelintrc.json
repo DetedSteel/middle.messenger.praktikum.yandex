@@ -1,0 +1,9 @@
+{
+  "extends": "stylelint-config-standard-scss",
+  "rules": {
+    "selector-class-pattern": "^.+$",
+    "scss/at-import-partial-extension": "always"
+  },
+  "ignoreFiles": ["dist/*"],
+  "plugins": ["stylelint-scss"]
+}

@@ -1,0 +1,20 @@
+<div class='chat-item'>
+  <div class='user-block'>
+    {{{Image src=chatItemPhoto alt='chatAvatar' style='chats'}}}
+    <div class='user-block__names'>
+      <p class='user-block__name'>{{chatName}}</p>
+      <p class='user-block__message'>
+        {{#if lastMessageAuthor}}
+          <span class='user-block__message_darkText'>{{lastMessageAuthor}}</span>
+        {{/if}}
+        {{lastMessage}}
+      </p>
+    </div>
+  </div>
+  <div class='chat-item__status'>
+    <p class='chat-item__time'>{{lastMessageTime}}</p>
+    {{#if unreadCount}}
+      <p class='unread-messages'>{{unreadCount}}</p>
+    {{/if}}
+  </div>
+</div>

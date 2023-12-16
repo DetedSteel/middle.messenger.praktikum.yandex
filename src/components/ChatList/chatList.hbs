@@ -1,0 +1,14 @@
+<div class='chat-list'>
+  {{{Button text='Профиль' image=image style='profileLink' onClick=onClick}}}
+  {{{Input type='text' name='searchChat' placeholder='Поиск' style='searchChat'}}}
+  {{#each chats}}
+    {{{ChatItem
+      chatItemPhoto=this.chatItemPhoto
+      chatName=this.chatName
+      lastMessage=this.lastMessage
+      lastMessageAuthor=this.lastMessageAuthor
+      lastMessageTime=this.lastMessageTime
+      unreadCount=this.unreadCount
+    }}}
+  {{/each}}
+</div>

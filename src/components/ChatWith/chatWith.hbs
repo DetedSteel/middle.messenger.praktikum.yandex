@@ -1,0 +1,31 @@
+<div class='chat-block'>
+  <div class='chat-block__chatWith'>
+    <div class='chat-block__personInfo'>
+      {{{Image src=chatPhoto alt='chatAvatar' style='chat'}}}
+      <h3>{{name}}</h3>
+    </div>
+      {{{Button image=menuDotsImage style='menuDots'}}}
+    </div>
+  <div class='chat-block__chat'>
+    {{#each messages}}
+      {{#if this.author}}
+        {{{Message
+          text=this.text
+          time=this.time
+          image=this.image
+          statusImage=this.statusImage
+          style='your'
+        }}}
+      {{else}}
+        {{{Message text=this.text time=this.time image=this.image style='others'}}}
+      {{/if}}
+    {{/each}}
+  </div>
+  <div class='chat-block__messageBlock'>
+    <div class='chat-block__messageContent'>
+      {{{Button image=addFileImage style='messageButtons'}}}
+      {{{Input type='text' name='message' placeholder='Сообщение' style='message'}}}
+    </div>
+    {{{Button image=sendMessageImage style='messageButtons'}}}
+  </div>
+</div>
